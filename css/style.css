@@ -1,0 +1,74 @@
+@media (min-width: 1100px) {
+	body {
+		margin: 0 auto;
+	}
+
+	#start {
+	/ / min-height: 100 %;
+	}
+
+	#tlo {
+		background: url('../img/start.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		height: 600px;
+	}
+
+	#about {
+		min-height: 100%;
+		padding-top: 91px;
+	}
+
+	.progress {
+		border-radius: 10px;
+		background-color: #000;
+	}
+
+	.progress-bar {
+		background-color: #ff0;
+	}
+
+
+	#skills {
+		min-height: 100%;
+		padding-top: 91px;
+	}
+
+	#skills p {
+		text-align: center;
+	}
+
+	#skills img {
+		margin-left: 40px;
+	}
+	.oraz{
+		padding-top: 100px;
+		min-height: 320px;
+	}
+	.zamierzam{
+		min-height: 200px;
+		padding-top: 50px;
+	}
+	.przyszlosc{
+		min-height: 200px;
+	}
+	#contact {
+		min-height: 100%;
+		background: url('../img/krk1.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		padding-top: 91px;
+	}
+
+	#dane {
+		position: relative;
+		top: 250px;
+		background-color: rgba(127, 123, 123, 0.7);
+
+	}
+
+	#dane span {
+		font-size: 3.3em;
+		opacity: 1;
+	}
+}
