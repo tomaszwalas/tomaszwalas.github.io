@@ -9,13 +9,21 @@
     
     <meta name="description" content="Tomasz Walas portfolio">
     <meta name="author" content="Tomasz Walas">
-	
+	<style>
+  @-webkit-keyframes obrot {
+  from {
+  -webkit-transform: rotate(0deg);
+  }
+  to { 
+  -webkit-transform: rotate(360deg);
+  }
+  </style>
 	<link rel="stylesheet" href="css/scrolling-nav.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/style laptop.css" type="text/css" />
-    <link rel="stylesheet" href="css/style mobile.css" type="text/css" />
+    <!--<link rel="stylesheet" href="css/style laptop.css" type="text/css" />
+    <link rel="stylesheet" href="css/style mobile.css" type="text/css" />-->
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	
@@ -45,7 +53,6 @@
   </head>
 
   <body>
-  <section id="start">
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -62,143 +69,167 @@
             <li class="active "><a class="page-scroll" href="#start">Główna</a></li>
             <li><a class="page-scroll" href="#about">O mnie</a></li>
             <li><a class="page-scroll" href="#skills">Umiejetnosci</a></li>
+            <li><a class="page-scroll" href="#projects">Moje prace</a></li>
             <li><a class="page-scroll" href="#contact">Kontakt</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-<div id="tlo"></div>
+  <section id="start">
+    
+<div id="tlo" class="col-xs-12 col-sm-12 col-md-12"></div>
 
     </section>
 
 
   <section id="about">
-    <div class="col-xs-12 col-md-4 col-md-offset-4">
-      <h1 class="text-center">Walas Tomasz</h1>
-      <h2 class="text-center">Front End Developer</h2>
-    </div>
-      <div class="col-xs-9 col-sm-6 col-sm-offset-4 col-md-4 col-md-offset-5">
-        <img src="img/obr.PNG" alt="Moje zdjęcie">
-      </div>
-      <div class="col-md-12">
-      <div class="col-xs-12 col-sm-6 col-md-5 col-md-offset-1 text-center">
-        <ul class="list-unstyled">
-          <li>
-            <p>praca w grupie</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                <span class="sr-only">60% Complete</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <p>zaangażowanie</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                <span class="sr-only">60% Complete</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <p>kreatywnosc</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                <span class="sr-only">60% Complete</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <p>angielski</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                <span class="sr-only">60% Complete</span>
-              </div>
-            </div>
-          </li>
-        </ul>
-
-      </div>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+          <h2>Nazywam się</h1>
+          <h1>Walas Tomasz</h2>
+        </div>
+        <div class="zdjecie">
+          <img src="img/obr.PNG" alt="Moje zdjęcie" align="center">
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <ul class="list-unstyled">
+              <li>
+                <p>praca w grupie</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span class="sr-only">60% Complete</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p>zaangażowanie</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span class="sr-only">60% Complete</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p>kreatywnosc</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                    <span class="sr-only">60% Complete</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <p>angielski</p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                    <span class="sr-only">60% Complete</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-1">
           <h2>O mnie</h2>
-          <p>Jestem studentem informatyki. Interesuje się nowinkami technicznymi oraz motoryzacją. Z łatwością porozumiewam się z innymi. </p>
+          <p>Mam 22 lata. Mieszkam w Krakowie.Obecnie Jestem studentem politechniki krakowskiej na wydziale fizykii matematyki i informatyki - profil informatyk. Front Endem interesuje się już odjakiegoś czasu, wiedzę zgromadzoną postanowiłem zacząć wykorzystywać jaki Freelancer. Poznałem <strong>html 5, css 3, js, less, bootstrap, photoshop, git</strong>.</p>
+          <p>W najbliższym czasie zamierzam opanować lepiej bibliotekę angular oraz poznać react i gulp.</p>
         </div>
       </div>
-
+    </div>
   </section>
+  
   <section id="skills">
-    <div class="col-xs-12 col-sm-6 col-md-6 text-center row">
-      <h2>Co już umiem</h2>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <p>photoshop</p>
-        <img src="img/photoshop.png" alt="">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <p>html</p>
-        <img src="img/html5.png" alt="">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <p>css</p>
-        <img src="img/css-3.png" alt="">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <p>javascript</p>
-        <img src="img/js.png" alt="">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <p>angular</p>
-        <img src="img/favicon.ico" alt="">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <p>bootstrap</p>
-        <img src="img/apple-touch-icon.png" alt="" width="64px" height="64px">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <p>github</p>
-        <img src="img/github-icon.png" alt="">
-    </div>
-      <div class="col-xs-3 col-sm-3 col-md-3" style="height: 94px">
-        <p>less</p>
-        <img src="img/less.png" alt="" width="64px" height="26px">
-    </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <p>jquery</p>
-        <img src="img/jquery.png" alt="">
-    </div>
-    <div class="col-xs-3 col-sm-3 col-md-3">
-      <p>prestashop</p>
-      <img src="img/presta.png" alt="">
-    </div>
-    </div>
-
-    <div class="col-sm-6 col-md-6">
-      <H2 class="text-center oraz" >ORAZ....</H2>
-      </div>
-    <div class="col-sm-6 col-md-6 zamierzam">
-      <H2 class="text-center" >Czego zamierzam się nauczyć <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></H2>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-6 przyszlosc row">
-      <div class="col-xs-3 col-sm-3 col-md-3">
-      <p>react</p>
-      <img src="img/react.ico" alt="">
-      </div>
-        <div class="col-xs-3 col-sm-3 col-md-3">
-      <p>node</p>
-      <img src="img/node_js.png" alt="" width="64px" height="64px">
-        </div>
-          <div class="col-xs-3 col-sm-3 col-md-3">
-      <p>gulp</p>
-      <img src="img/gulp.png" alt="" width="64px" height="64px">
+    <div class="container">
+      <div class="row">
+        <div id="wysoki" class="col-xs-12 col-sm-6 col-md-6 text-center">
+          <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+            <h2>Co już umiem</h2>
           </div>
-            <div class="col-xs-3 col-sm-3 col-md-3">
-      <p>sass</p>
-      <img src="img/sass.png" alt="" width="64px" height="64px">
-            </div>
-              <div class="col-xs-3 col-sm-3 col-md-3">
-      <p>laravel</p>
-      <img src="img/laravel.png" alt="">
-              </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+              <p>photoshop</p>
+              <img src="img/photoshop.png" alt="">
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+            <p>html</p>
+            <img src="img/html5.png" alt="">
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+            <p>css</p>
+            <img src="img/css-3.png" alt="">
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+            <p>javascript</p>
+            <img src="img/js.png" alt="">
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+            <p>angular</p>
+            <img src="img/favicon.ico" alt="">
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+            <p>bootstrap</p>
+            <img src="img/apple-touch-icon.png" alt="" width="64px" height="64px">
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+            <p>github</p>
+            <img src="img/github-icon.png" alt="">
+        </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr" style="height: 94px">
+            <p>less</p>
+            <img src="img/less.png" alt="" width="64px" height="26px">
+        </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+            <p>jquery</p>
+            <img src="img/jquery.png" alt="">
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 obr">
+          <p>prestashop</p>
+          <img src="img/presta.png" alt="">
+        </div>
+      </div>
+      <div id="niski" class="col-xs-12 col-sm-6 col-md-6 oraz">
+        <H2 class="text-center" >ORAZ....</H2>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 zamierzam">
+        <H2 class="text-center" >Czego zamierzam się nauczyć <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></H2>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 przyszlosc text-center">
+        <div class="col-xs-3 col-sm-3 col-md-3 obr">
+          <p>react</p>
+          <img src="img/react.ico" alt="">
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 obr">
+          <p>node</p>
+          <img src="img/node_js.png" alt="" width="64px" height="64px">
+        </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 obr">
+            <p>gulp</p>
+            <img src="img/gulp.png" alt="" width="64px" height="64px">
+          </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 obr">
+          <p>sass</p>
+          <img src="img/sass.png" alt="" width="64px" height="64px">
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 obr">
+          <p>laravel</p>
+          <img src="img/laravel.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="col-xs-12 col-sm-6 col-md-6 calyy">
+      <img class="item" src="img/strona1.PNG" alt="Moja praca" height="450px">
+      <div class="overlay">
+        <div class="description"><a href="http://krzewyonline.pl" target="_blank">Strona wizytówka</a></div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 calyy">
+      <img class="item" src="img/strona2.PNG" alt="Moja praca" height="450px">
+      <div class="overlay">
+        <div class="description"><a href="https://tomaszwalas.github.io/forest/" target="_blank">Strona wizytówka</a></div>
+      </div>
     </div>
   </section>
   <section id="contact">
@@ -214,7 +245,17 @@
   </section>
 
     
-    
+  <script>
+  $(document).ready(function(){
+      if ($(window).width() > 768){
+        if($("#niski").height() >= $("#wysoki").height()){
+            $("#wysoki").height( $("#niski").height() );
+        } else {
+            $("#niski").height( $("#wysoki").height() );
+        }}
+    });
+  
+  </script>
     
   </body>
 </html>
