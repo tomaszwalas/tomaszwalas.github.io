@@ -11,16 +11,28 @@
     <meta name="author" content="Tomasz Walas">
 	<style>
   @-webkit-keyframes obrot {
-  from {
-  -webkit-transform: rotate(0deg);
-  }
-  to { 
-  -webkit-transform: rotate(360deg);
-  }
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to { 
+      -webkit-transform: rotate(360deg);
+    }
+
+  @-webkit-keyframes pokazMnie {
+    from{
+      -webkit-transform: rotate(0deg);
+       
+    }
+    to {
+        
+        -webkit-transform: rotate(360deg);
+    }
+}
   </style>
 	<link rel="stylesheet" href="css/scrolling-nav.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <!--<link rel="stylesheet" href="css/style laptop.css" type="text/css" />
     <link rel="stylesheet" href="css/style mobile.css" type="text/css" />-->
@@ -35,6 +47,7 @@
 
 	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/scrolling-nav.js"></script>
+  <script src="js/jquery.viewportchecker.min.js"></script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -76,9 +89,16 @@
       </div>
     </nav>
   <section id="start">
-    
-<div id="tlo" class="col-xs-12 col-sm-12 col-md-12"></div>
-
+    <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 text-center welcome">
+                <h2 class="welcome2">Witaj na mojej stronie</h2>
+              </div>
+              <div class="col-xs-1 col-sm-1 col-md-1 scroll-me">
+                    <a class="page-scroll" href="#about"><img src="img/scroll_down.png" alt=""><br>SCROLL DOWN</a>
+                </div>
+</div>
+</div>
     </section>
 
 
@@ -86,8 +106,8 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-          <h2>Nazywam się</h1>
-          <h1>Walas Tomasz</h2>
+          <h3>Nazywam się</h3>
+          <h2>Walas Tomasz</h2>
         </div>
         <div class="zdjecie">
           <img src="img/obr.PNG" alt="Moje zdjęcie" align="center">
@@ -132,7 +152,7 @@
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-1">
           <h2>O mnie</h2>
-          <p>Mam 22 lata. Mieszkam w Krakowie.Obecnie Jestem studentem politechniki krakowskiej na wydziale fizykii matematyki i informatyki - profil informatyk. Front Endem interesuje się już odjakiegoś czasu, wiedzę zgromadzoną postanowiłem zacząć wykorzystywać jaki Freelancer. Poznałem <strong>html 5, css 3, js, less, bootstrap, photoshop, git</strong>.</p>
+          <p>Mam 22 lata. Mieszkam w Krakowie.Obecnie Jestem studentem politechniki krakowskiej na wydziale fizykii matematyki i informatyki - profil informatyk. Front Endem interesuje się już od jakiegoś czasu, wiedzę zgromadzoną postanowiłem zacząć wykorzystywać jako Freelancer. Poznałem <strong>HTML 5, CSS 3, JS, Less, Bootstrap, Photoshop, Git</strong>.</p>
           <p>W najbliższym czasie zamierzam opanować lepiej bibliotekę angular oraz poznać react i gulp.</p>
         </div>
       </div>
@@ -191,7 +211,7 @@
         <H2 class="text-center" >ORAZ....</H2>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 zamierzam">
-        <H2 class="text-center" >Czego zamierzam się nauczyć <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></H2>
+        <H2 class="text-center" >Czego zamierzam się nauczyć <span class="glyphicon glyphicon-arrow-right sdf" aria-hidden="true"></span></H2>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 przyszlosc text-center">
         <div class="col-xs-3 col-sm-3 col-md-3 obr">
@@ -219,16 +239,20 @@
     </div>
   </section>
   <section id="projects">
-    <div class="col-xs-12 col-sm-6 col-md-6 calyy">
-      <img class="item" src="img/strona1.PNG" alt="Moja praca" height="450px">
-      <div class="overlay">
-        <div class="description"><a href="http://krzewyonline.pl" target="_blank">Strona wizytówka</a></div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 calyy">
-      <img class="item" src="img/strona2.PNG" alt="Moja praca" height="450px">
-      <div class="overlay">
-        <div class="description"><a href="https://tomaszwalas.github.io/forest/" target="_blank">Strona wizytówka</a></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 calyy">
+          <img class="item" src="img/strona1.PNG" alt="Moja praca" >
+          <div class="overlay">
+            <div class="description"><a href="http://krzewyonline.pl" target="_blank">Strona wizytówka</a></div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 calyy">
+          <img class="item" src="img/strona2.PNG" alt="Moja praca">
+          <div class="overlay">
+            <div class="description"><a href="https://tomaszwalas.github.io/forest/" target="_blank">Strona wizytówka</a></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -247,12 +271,19 @@
     
   <script>
   $(document).ready(function(){
+
       if ($(window).width() > 768){
         if($("#niski").height() >= $("#wysoki").height()){
             $("#wysoki").height( $("#niski").height() );
+
         } else {
             $("#niski").height( $("#wysoki").height() );
+
         }}
+        if ($(window).width() < 768){
+           $(".sdf").toggleClass("glyphicon-arrow-right glyphicon-arrow-down");}
+          
+         
     });
   
   </script>
