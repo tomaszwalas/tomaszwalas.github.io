@@ -1,4 +1,7 @@
 {
+  "homepage": "https://tomaszwalas.github.io/currency-app-feature-chart/",
+  "predeploy": "yarn run build",
+"deploy": "gh-pages -b master -d build",
   "name": "currency-app",
   "version": "0.1.0",
   "private": true,
